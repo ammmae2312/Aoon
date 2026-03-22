@@ -1,16 +1,11 @@
 # REQUIRED CONFIG
-BOT_TOKEN="8566536203:AAGzZqMMKFv36vhqzzqcczmyc6iAA2WCiBw"
-DATABASE_URL="mongodb+srv://test:test@cluster0.ocyx0xe.mongodb.net/?appName=Cluster0"
-FILELION_API="3cd6f6f537fc345571d7cfbb"
-JD_EMAIL="ammar067ammar067@gmail.com"
-JD_PASS="1502194331aA$"
-OWNER_ID="8481604297"
-STREAMWISH_API="4c5a456c0dbca4a2075b91ee"
-TELEGRAM_API="33574861"
-TELEGRAM_HASH="5aed78436489f6c4ce27b2fa5b9793fa"
+BOT_TOKEN = ""
+OWNER_ID = 0
+TELEGRAM_API = 0
+TELEGRAM_HASH = ""
 
 # Recommended for persisting settings, RSS feeds, and task history. Essential for some features.
-
+DATABASE_URL = ""
 
 # OPTIONAL CONFIG
 TG_PROXY = {}  # Example: {"scheme": "socks5", "hostname": "11.22.33.44", "port": 1234, "username": "user", "password": "pass"}
@@ -19,8 +14,10 @@ CMD_SUFFIX = ""  # Suffix to add to all bot commands
 AUTHORIZED_CHATS = ""  # Space separated chat_id/user_id to authorize
 SUDO_USERS = ""  # Space separated user_id for sudo access
 DEFAULT_UPLOAD = ""  # Default uploader if -ul is not specified. Options: "yt" (YouTube), "gd" (Google Drive), "rc" (Rclone), "gofile" (GoFile), or "" (empty for no specific default).
+FILELION_API = ""
 GOFILE_API = ""  # GoFile API token for uploading files to GoFile.io (get from https://gofile.io/myProfile)
 GOFILE_FOLDER_ID = ""  # Default GoFile folder ID for uploads. If not set, files upload to account root.
+STREAMWISH_API = ""
 EXCLUDED_EXTENSIONS = (
     ""  # Space separated file extensions to exclude (e.g., .log .exe)
 )
@@ -105,7 +102,7 @@ THUMBNAIL_LAYOUT = ""  # Thumbnail layout for uploads (e.g., 2x2, 3x3)
 
 # qBittorrent/Aria2c
 TORRENT_TIMEOUT = 0  # Timeout in seconds for dead torrents. 0 for no timeout.
-BASE_URL = "https://aoon-production.up.railway.app"  # Base URL of the bot, for web file selection (e.g., http://myip or http://myip:port)
+BASE_URL = ""  # Base URL of the bot, for web file selection (e.g., http://myip or http://myip:port)
 BASE_URL_PORT = 80  # Port for the BASE_URL (Default: 80)
 WEB_PINCODE = False  # Require a PIN code for web file selection
 
@@ -119,3 +116,6 @@ RSS_DELAY = 600  # RSS feed check interval in seconds (Default: 600)
 RSS_CHAT = ""  # Chat ID or username where RSS messages will be sent
 RSS_SIZE_LIMIT = 0  # Max size for RSS items in bytes (0 for no limit)
 
+# Heroku config for get BASE_URL automatically
+HEROKU_APP_NAME = ""  # Name of your Heroku app, used to get BASE_URL automatically
+HEROKU_API_KEY = ""  # API key for your Heroku account
